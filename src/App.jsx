@@ -31,7 +31,7 @@ const App = () => {
   const renderStep1 = () => (
     <div className='container'>
       <h1>Bem-vindos à Abertura Generation!</h1>
-      <p className='explicacao'>Hoje aperfeiçoar o nosso trabalho em equipe, escrevendo uma história colaborativa.<br /> Antes de começar, precisamos que os instrutores escolham um número entre 1 e 3.</p>
+      <p className='explicacao'>Hoje vamos aperfeiçoar o nosso trabalho em equipe, escrevendo uma história colaborativa.<br /> Antes de começar, precisamos que os instrutores escolham um número entre 1 e 3.</p>
       <p><b>Yuri</b>, por favor, escolha um número:</p>
       <button onClick={() => handleGeneroEscolha(1)}>1</button>
       <button onClick={() => handleGeneroEscolha(2)}>2</button>

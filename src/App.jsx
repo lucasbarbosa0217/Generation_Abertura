@@ -30,9 +30,9 @@ const App = () => {
 
   const renderStep1 = () => (
     <div className='container'>
-      <h1>Abertura Generation!</h1>
-      <p className='explicacao'>Hoje vamos trabalhar nosso trabalho em equipe escrevendo uma história juntes,<br/> mas antes disso as pessoas instrutoras precisam escolher um némero entre 1 e 3.</p>
-      <p><b>Yuri</b>, escolha um número:</p>
+      <h1>Bem-vindos à Abertura Generation!</h1>
+      <p className='explicacao'>Hoje aperfeiçoar o nosso trabalho em equipe, escrevendo uma história colaborativa.<br /> Antes de começar, precisamos que os instrutores escolham um número entre 1 e 3.</p>
+      <p><b>Yuri</b>, por favor, escolha um número:</p>
       <button onClick={() => handleGeneroEscolha(1)}>1</button>
       <button onClick={() => handleGeneroEscolha(2)}>2</button>
       <button onClick={() => handleGeneroEscolha(3)}>3</button>
@@ -41,7 +41,7 @@ const App = () => {
 
   const renderStep2 = () => (
     <div className='container'>
-      <p>O gênero da história deverá ser:</p>
+      <p>O gênero da história será:</p>
       <h1> {generoEscolhido}</h1>
       <button onClick={() => setStep(3)}>Continuar</button>
     </div>
@@ -49,7 +49,7 @@ const App = () => {
 
   const renderStep3 = () => (
     <div className='container'>
-      <p><b>Camila</b> agora é a sua vez de escolher um número:</p>
+      <p><b>Camila</b>, agora é a sua vez de escolher um número:</p>
       <button onClick={() => handleObjetoEscolha(1)}>1</button>
       <button onClick={() => handleObjetoEscolha(2)}>2</button>
       <button onClick={() => handleObjetoEscolha(3)}>3</button>
@@ -68,7 +68,7 @@ const App = () => {
 
   const renderStep5 = () => (
     <div className='container'>
-      <p className='explicacao'>Agora é a hora do trabalho em equipe!<br></br> Escrevam uma história de <b>{generoEscolhido}</b> sobre um/a <b>{objetoHistoria}</b></p>
+      <p className='explicacao'>Agora é hora do trabalho em equipe!<br/> Escrevam uma história de <b>{generoEscolhido}</b> sobre um/a <b>{objetoHistoria}</b>.</p>
       <textarea rows="10" cols="50" />
       <button onClick={() => setStep(1)}>Recomeçar</button>
 
